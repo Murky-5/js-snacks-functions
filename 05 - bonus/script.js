@@ -10,15 +10,15 @@ const name = 'Mario';
 // Dichiara la funzione qui.
 
 function daySpan(name) {
-    let daySpan = Date()
-    let dayTime = daySpan.getHours
+    let daySpan = new Date()
+    let dayTime = daySpan.getHours()
     let greetings;
-    if (0 >= dayTime < 12) {
+    if (0 <= dayTime && dayTime < 12) {
         greetings = `Buongiorno ${name}`
     } else if (dayTime < 17) {
         greetings = `Buon pomeriggio ${name}`
-    } else if (dayTime < 0) {
-        greetings = `Buona sera ${name}`
+    } else if (dayTime < 24) {
+        greetings = `Buonasera ${name}`
     }
     return greetings
 }
