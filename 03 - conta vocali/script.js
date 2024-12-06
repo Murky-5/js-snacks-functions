@@ -5,11 +5,12 @@ const word = 'javascript';
 
 // Dichiara la funzione qui.
 function vocals(word){
-    vocalsNumber = [];
+    vocalsNumber = [""];
     for (let i = 0; i < word.length; i++){
         const vocalsChecker = (word[i] === "a" || word[i] === "e" || word[i] === "i" || word[i] === "o" || word[i] === "u")
         if (vocalsChecker) {
-            vocalsNumber = Number(vocalsNumber) + 1;
+            vocalsNumber[0] = Number(vocalsNumber[0]) + 1;
+            vocalsNumber.push(word[i])
         }
     }
     return vocalsNumber
