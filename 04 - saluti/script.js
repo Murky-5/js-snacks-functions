@@ -5,7 +5,7 @@ const userName = 'Mario';
 
 // Dichiara la funzione qui.
 
-const hi = (name) => greetings = "ciao " + String(name)
+const hi = (name, greetings) => greetings = "ciao " + String(name)
 
 // Invoca la funzione qui e stampa il risultato in console
 
