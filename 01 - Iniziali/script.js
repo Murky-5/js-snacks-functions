@@ -5,17 +5,17 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 
 // Dichiara la funzione qui.
 
-function nameFirstLetter(nameLenght) {
-    initialLetter = []
+function nameFirstCharacter(nameLenght) {
+    initialCharacter = []
     for (let i = 0; i < names.length; i++){
         nameLenght = names[i]
-        initialLetter.push(nameLenght[0])
+        initialCharacter.push(nameLenght[0])
     }
-    return initialLetter;
+    return initialCharacter;
 }
 
 // Invoca la funzione qui e stampa il risultato in console
 
-console.log(nameFirstLetter());
+console.log(nameFirstCharacter());
 
 //Risultato atteso: ["A", "L", "M", "A", "G", "A"]
